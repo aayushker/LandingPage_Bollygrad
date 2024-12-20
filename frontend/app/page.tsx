@@ -8,6 +8,7 @@ import About from '../components/About'
 import WhatWeDo from '../components/WhatWeDo'
 import Founders from '../components/Founders'
 import Gallery from '../components/Gallery'
+import Footer from '@/components/Footer';
 
 export default function LandingPage() {
   return (
@@ -20,7 +21,7 @@ export default function LandingPage() {
           autoPlay
           loop
           muted
-          className="absolute top-0 left-0 min-w-full min-h-full object-cover z-0"
+          className="absolute top-[-53px] left-0 min-w-full min-h-full object-cover z-0"
         >
           <source src="/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -56,6 +57,8 @@ export default function LandingPage() {
 
       <SocialMediaIcons />
       <ScrollToTop />
+
+      <Footer />
     </div>
   )
 }
