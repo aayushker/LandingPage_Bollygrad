@@ -32,17 +32,17 @@ const founders = [
 
 export default function Founders() {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-700 text-white transition-all duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-extrabold text-center mb-12">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500">
             FOUNDERS
           </span>
         </h2>
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 justify-center">
           {founders.map((founder) => (
             <div key={founder.name} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105">
-              <div className="relative h-80">
+              <div className="relative mx-auto" style={{ width: '300px', height: '296px' }}>
                 <Image
                   src={founder.image}
                   alt={founder.name}
@@ -84,4 +84,3 @@ export default function Founders() {
     </section>
   )
 }
-

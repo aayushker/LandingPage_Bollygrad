@@ -5,21 +5,18 @@ const services = [
   {
     title: 'Stage Play',
     icon: Theater,
-    image: '/theater.png',
     description: 'Experience the magic of live theater with our captivating stage productions.',
     link: '/stage-play'
   },
   {
     title: 'Street Play',
     icon: Users,
-    image: '/street-play.jpg',
     description: 'Witness powerful performances that bring social issues to life in public spaces.',
     link: '/street-play'
   },
   {
     title: 'Short Film',
     icon: Video,
-    image: '/short-film.jpg',
     description: 'Explore compelling narratives through our award-winning short film productions.',
     link: '/short-film'
   }
@@ -27,8 +24,11 @@ const services = [
 
 export default function WhatWeDo() {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-100 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-20 bg-gradient-to-b from-gray-100 to-white transition-all duration-500">
+      <div className="absolute inset-0">
+        <img src="/whatwe.png" alt="Background" className="w-full h-full object-cover opacity-10" />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-extrabold text-center mb-12">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-yellow-600">
             WHAT WE DO?
@@ -36,16 +36,9 @@ export default function WhatWeDo() {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.title} className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105">
-              <div className="relative h-48">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                  <service.icon className="h-16 w-16 text-white" />
-                </div>
+            <div key={service.title} className="bg-white bg-opacity-90 rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105">
+              <div className="flex items-center justify-center h-48 bg-gradient-to-r from-red-600 to-yellow-600">
+                <service.icon className="h-24 w-24 text-white" />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
@@ -66,4 +59,3 @@ export default function WhatWeDo() {
     </section>
   )
 }
-

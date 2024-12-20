@@ -1,27 +1,16 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function About() {
   return (
-    <section className="relative py-20 overflow-hidden">
-      {/* Movie-related SVG background */}
-      <svg
-        className="absolute inset-0 w-full h-full text-gray-100 opacity-25"
-        fill="currentColor"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <path d="M0 0 L50 100 L100 0 Z" />
-        <path d="M50 100 L100 0 L100 100 Z" />
-        <circle cx="20" cy="20" r="10" />
-        <circle cx="80" cy="20" r="10" />
-        <circle cx="20" cy="80" r="10" />
-        <circle cx="80" cy="80" r="10" />
-        <rect x="40" y="40" width="20" height="20" />
-      </svg>
+    <section className="relative py-20 overflow-hidden transition-all duration-500">
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center opacity-5"
+        style={{ backgroundImage: "url('/about.png')" }}
+      ></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
             About Bollygrad Studioz
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-500">
@@ -44,7 +33,7 @@ export default function About() {
           <div className="mt-10 text-center">
             <Link
               href="/about"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition duration-300"
             >
               Learn More
               <svg
@@ -63,6 +52,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

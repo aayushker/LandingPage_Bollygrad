@@ -69,7 +69,7 @@ export default function NavbarComponent() {
         <NavbarItem isActive>
           <Link
             href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
           >
             Home
           </Link>
@@ -77,7 +77,7 @@ export default function NavbarComponent() {
         <NavbarItem>
           <Link
             href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
           >
             What we do?
           </Link>
@@ -85,7 +85,7 @@ export default function NavbarComponent() {
         <NavbarItem>
           <Link
             href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
           >
             Founder
           </Link>
@@ -93,7 +93,7 @@ export default function NavbarComponent() {
         <NavbarItem>
           <Link
             href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
           >
             Our Team
           </Link>
@@ -101,7 +101,7 @@ export default function NavbarComponent() {
         <NavbarItem>
           <Link
             href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
           >
             About
           </Link>
@@ -109,7 +109,7 @@ export default function NavbarComponent() {
         <NavbarItem>
           <Link
             href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
           >
             Contact
           </Link>
@@ -123,7 +123,7 @@ export default function NavbarComponent() {
             mainWrapper: "h-full",
             input: "text-small",
             inputWrapper:
-              "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
+              "h-full font-normal text-default-500 bg-default-500/20 dark:bg-default-500/20",
           }}
           placeholder="Type to search..."
           size="sm"
